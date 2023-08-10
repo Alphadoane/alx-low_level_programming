@@ -1,6 +1,2 @@
 #!/bin/bash
-if [ -z "$CFILE" ]; then
-    echo "Error: The CFILE variable is not set."
-    exit 1
-fi
-gcc -E "$CFILE" -o c
+gcc -E $CFILE -o c
