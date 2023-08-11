@@ -22,12 +22,10 @@ putchar(digit2 + '0');
 if (digit1 != 9 || digit2 != 9)
 {	    
 putchar(',');
-putchar(' ');
+putchar(' '\'\n');
 }
 }
 }
-
-putchar('\n');
 
 return (0);
 }
