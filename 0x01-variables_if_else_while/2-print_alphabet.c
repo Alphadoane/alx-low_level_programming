@@ -3,7 +3,7 @@
 int main(void)
 {
 char letter = 'a';
-    
+   
 while (letter <= 'z')
 {
 
@@ -13,7 +13,7 @@ letter++;
 }
 
 putchar('\n');
-    
+   
 return (0);
 }
 
