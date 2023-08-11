@@ -3,7 +3,7 @@
 #include <time.h>
 
 /* betty style doc for function main goes there */
-int main()
+int main(void)
 {
 int n;
 
