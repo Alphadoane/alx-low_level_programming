@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: This program prints assigns random number to variable n everytime it is executed
+ * Description: This program prints assigns random number to variable n
+ *               everytime it is executed
  * Return: Always 0 (Success)
  */
 int main(void)
