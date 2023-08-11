@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-putchar;{
+putchar;[
 ('0' + 0);
 ('0' + 1);
 ('0' + 2);
@@ -20,7 +20,7 @@ putchar;{
 ('0' + 7);
 ('0' + 8);
 ('0' + 9);
-}
+]
 putchar('\n');
 
 return (0);
