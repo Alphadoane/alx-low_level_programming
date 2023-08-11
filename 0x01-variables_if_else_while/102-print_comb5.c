@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: This program prints combinations of two two-digit numbers
- *              in ascending order, with numbers separated by a space and a comma.
+ *              in ascending order.
  * Return: Always 0 (Success)
  */
 int main(void)
