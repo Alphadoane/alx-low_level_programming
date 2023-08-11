@@ -9,23 +9,16 @@
  */
 int main(void)
 {
-int digit1;
-int digit2;
-
-for (digit1 = 0; digit1 <= 9; digit1++)
+int digit number;
+for (number = 0; number <=9; number++)
 {
-for (digit2 = digit1; digit2 <= 9; digit2++)
+putchar(number + '0');
+if (number!= 9)
 {
-putchar(digit1 + '0');
-putchar(digit2 + '0');
-
-if (digit1 != 9 || digit2 != 9)
-{	    
 putchar(',');
-putchar(' ');
-}
+putchar('');
 }
 }
 putchar('\n');
-return (0);
+return(0);
 }
