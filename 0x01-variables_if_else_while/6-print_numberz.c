@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-putchar
+putchar;
 {
 ('0' + 0);
 ('0' + 1);
