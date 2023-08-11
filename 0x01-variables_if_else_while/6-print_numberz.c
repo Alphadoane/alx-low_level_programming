@@ -19,7 +19,6 @@ putchar('0' + 6);
 putchar('0' + 7);
 putchar('0' + 8);
 putchar('0' + 9);
-
 putchar('\n');
 
 return (0);
