@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: This program prints all possible different combinations of two digits
+ * Description: This program prints different combinations of two digits
  *              in ascending order, separated by a comma and a space.
  * Return: Always 0 (Success)
  */
