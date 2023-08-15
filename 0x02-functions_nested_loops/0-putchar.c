@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- *main - entry point of the programme
- *description : the programme prints putchar and returns '0' when successful
+ *main - Entry point of the program
+ *Description: the program prints putchar and returns '0' when successful
  */
 int main(void)
 {
