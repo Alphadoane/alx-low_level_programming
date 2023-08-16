@@ -1,21 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
-int add(int a, int b) {
-return (a + b);
-}
-
-int main() {
-int num1, num2, sum;
-
-printf("Enter first integer: ");
-scanf("%d", &num1);
-
-printf("Enter second integer: ");
-scanf("%d", &num2);
-
-sum = add(num1, num2);
-
-printf("Sum: %d\n", sum);
-
-return (0);
+/**
+ * add - Adds two integers
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: The sum of a and b
+ */
+int add(int a, int b)
+{
+return a + b;
 }
