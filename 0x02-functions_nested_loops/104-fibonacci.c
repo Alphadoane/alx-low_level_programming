@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-unsigned long long int a = 1, b = 2, next;
+unsigned int a = 1, b = 2, next;
 
-printf("%llu, %llu, ", a, b);
+printf("%u, %u, ", a, b);
 
 for (int i = 2; i < 98; i++)
 {
 next = a + b;
-printf("%llu", next);
+printf("%u", next);
 
 if (i != 97)
 printf(", ");
