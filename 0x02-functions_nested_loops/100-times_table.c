@@ -4,12 +4,11 @@
  * print_times_table - Prints the n times table
  * @n: The times table to print
  */
-void print_times_table(int n)
+void print_times_table(void)
+int n, row, column, result;
 {
 if (n < 0 || n > 15)
 return;
-
-int row, column, result;
 
 for (row = 0; row <= n; row++)
 {
