@@ -31,5 +31,8 @@ int add(int a, int b);
 /* Function to print natural numbers from n to 98 */
 void print_to_98(int n);
 
+/* Function to print the n times table */
+void print_times_table(int n);
+
 #endif /* MAIN_H */
 
