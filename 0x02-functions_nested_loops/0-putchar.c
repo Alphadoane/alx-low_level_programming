@@ -5,9 +5,15 @@
  * It also returns 0 to indicate successful execution.
  */
 int main() {
-// Print "_putchar" followed by a new line
+/*
+ * Print "_putchar" followed by a new line
+ *
+*/
 printf("_putchar\n");
 
-// Return 0 to indicate successful execution
-return 0;
+/*
+ * Return 0 to indicate successful execution
+ *
+ */
+return (0);
 }
