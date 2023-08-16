@@ -19,4 +19,13 @@ int _putchar(char c);
 /* Function to check if a character is lowercase */
 int _islower(int c);
 
+/* Function to print a character */
+int _putchar(char c);
+
+/* Function to check if a character is lowercase */
+int _islower(int c);
+
+/* Function to check if a character is an alphabetic letter */
+int _isalpha(int c);
+
 #endif /* MAIN_H */
