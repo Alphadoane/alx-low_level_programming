@@ -1,12 +1,13 @@
 #include <stdio.h>
-/*
-*main: Entry point of the program
-*
-*Description: the program prints putchar and returns '0' when successful
-*
-*/
-int main(void)
-{
+
+/**
+ * This program demonstrates printing "_putchar" followed by a new line.
+ * It also returns 0 to indicate successful execution.
+ */
+int main() {
+// Print "_putchar" followed by a new line
 printf("_putchar\n");
-return (0);
+
+// Return 0 to indicate successful execution
+return 0;
 }
