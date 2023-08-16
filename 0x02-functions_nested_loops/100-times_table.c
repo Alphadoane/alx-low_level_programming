@@ -11,9 +11,9 @@ return;
 
 int row, column, result;
 
-for (int row = 0; row <= n; row++)
+for (row = 0; row <= n; row++)
 {
-for (int column = 0; column <= n; column++)
+for (column = 0; column <= n; column++)
 {
 result = row * column;
 
