@@ -27,5 +27,9 @@ void times_table(void);
 
 /* Function to add two integers */
 int add(int a, int b);
+
+/* Function to print natural numbers from n to 98 */
+void print_to_98(int n);
+
 #endif /* MAIN_H */
 
