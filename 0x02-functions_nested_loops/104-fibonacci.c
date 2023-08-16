@@ -10,18 +10,17 @@ int main(void)
 unsigned int a = 1, b = 2, next;
 int i;
 
-printf("%u, %u, ", a, b);
+printf("%lu, %lu, ", a, b);
 
 for (i = 2; i < 98; i++)
 {
+a = b;
+b = next;
 next = a + b;
-printf("%u", next);
+printf("%lu", next);
 
 if (i != 97)
 printf(", ");
-
-a = b;
-b = next;
 }
 
 printf("\n");
