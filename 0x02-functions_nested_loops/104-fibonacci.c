@@ -8,10 +8,11 @@
 int main(void)
 {
 unsigned int a = 1, b = 2, next;
+int i;
 
 printf("%u, %u, ", a, b);
 
-for (int i = 2; i < 98; i++)
+for (i = 2; i < 98; i++)
 {
 next = a + b;
 printf("%u", next);
