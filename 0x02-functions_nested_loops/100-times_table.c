@@ -9,11 +9,13 @@ void print_times_table(int n)
 if (n < 0 || n > 15)
 return;
 
+int row, column, result;
+
 for (int row = 0; row <= n; row++)
 {
 for (int column = 0; column <= n; column++)
 {
-int result = row * column;
+result = row * column;
 
 if (column != 0)
 {
