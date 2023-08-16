@@ -14,10 +14,21 @@ for (column = 0; column <= 9; column++)
 result = (row * column);
 
 if (column == 0)
+{
 _putchar('0');
-else if (result < 10)
+_putchar(',');
 _putchar(' ');
+}
+
+else if (result < 10)
+{
+_putchar(' ');
+_putchar(' ');
+}
 else
+{
+_putchar(' ');
+}
 _putchar(result / 10 + '0');
 
 _putchar(result % 10 + '0');
