@@ -31,6 +31,7 @@ _putchar(result % 10 + '0');
 }
 if (column < 9)
 {
+_putchar(' ');
 _putchar(',');
 }
 else
