@@ -11,7 +11,7 @@ for (row = 0; row <= 9; row++)
 {
 for (column = 0; column <= 9; column++)
 {
-result = (row * column;)
+result = row * column;
 
 if (column == 0)
 {
