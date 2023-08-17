@@ -28,6 +28,8 @@ void print_square(int size);
 void _putchar(char c);
 void print_triangle(int size);
 
+void _putchar(char c);
+void print_number(int n);
 
 #endif /* MAIN_H */
 
