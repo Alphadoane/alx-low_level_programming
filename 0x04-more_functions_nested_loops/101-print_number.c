@@ -6,9 +6,6 @@
  */
 void print_number(int n)
 {
-int divisor = 1;
-int temp = n;
-int digit;
 
 if (n == 0)
 {
@@ -20,20 +17,25 @@ if (n < 0)
 {
 _putchar('-');
 n = -n;
-temp = n;
 }
+int num_digits = 0;
+int temp = n;
 
-while (temp > 9)
+while (temp != 0)
 {
-divisor *= 10;
+num_digits++;
 temp /= 10;
 }
 
-while (divisor > 0)
+int divisor = 1;
+int i;
+for (i = 1; i < num_digits; i++);
+divisor *= 10;
+
+while (divisor != 0)
 {
-digit = n / divisor;
-_putchar('0' + digit);
-n -= digit *divisor;
+_putchar('0' + n / divisor);
+n %= divisor;
 divisor /= 10;
 }
 }
