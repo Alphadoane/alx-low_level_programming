@@ -33,7 +33,7 @@ while (divisor > 0)
 {
 digit = n / divisor;
 _putchar('0' + digit);
-n -= digit * divisor;
+n -= digit *divisor;
 divisor /= 10;
 }
 }
