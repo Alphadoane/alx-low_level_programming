@@ -16,5 +16,11 @@ void _puts(char *str);
 /* Function prototype for _putchar function (if it's not provided externally) */
 int _putchar(char c);
 
+/* Function prototype for print_rev function */
+void print_rev(char *s);
+
+/* Function prototype for _putchar function (if it's not provided externally) */
+int _putchar(char c);
+
 #endif /* MAIN_H */
 
