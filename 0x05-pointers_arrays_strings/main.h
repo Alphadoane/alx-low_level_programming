@@ -22,5 +22,8 @@ void print_rev(char *s);
 /* Function prototype for _putchar function (if it's not provided externally) */
 int _putchar(char c);
 
+/* Function prototype for rev_string function */
+void rev_string(char *s);
+
 #endif /* MAIN_H */
 
