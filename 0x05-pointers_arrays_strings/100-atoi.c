@@ -36,5 +36,5 @@ i++;
 }
 
 /* Apply the sign to the result */
-return result * sign;
+return (result *sign);
 }
