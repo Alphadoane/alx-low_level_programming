@@ -41,5 +41,7 @@ int _putchar(char c);
 /* Function prototype for print_array function */
 void print_array(int *a, int n);
 
+/* Function prototype for _strcpy function */
+char *_strcpy(char *dest, char *src);
 #endif /* MAIN_H */
 
