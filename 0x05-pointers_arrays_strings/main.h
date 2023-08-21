@@ -38,6 +38,8 @@ void puts_half(char *str);
 /* Function prototype for _putchar function (if it's not provided externally) */
 int _putchar(char c);
 
+/* Function prototype for print_array function */
+void print_array(int *a, int n);
 
 #endif /* MAIN_H */
 
