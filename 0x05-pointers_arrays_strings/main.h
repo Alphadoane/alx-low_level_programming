@@ -25,5 +25,12 @@ int _putchar(char c);
 /* Function prototype for rev_string function */
 void rev_string(char *s);
 
+
+/* Function prototype for puts2 function */
+void puts2(char *str);
+
+/* Function prototype for _putchar function (if it's not provided externally) */
+int _putchar(char c);
+
 #endif /* MAIN_H */
 
