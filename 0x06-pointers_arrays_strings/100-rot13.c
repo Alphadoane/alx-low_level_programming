@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * rot13 - Encode a string using ROT13.
@@ -6,35 +8,51 @@
  *
  * Return: A pointer to the modified string.
  */
-char *rot13(char *str)
+char *rot13(char *input)
 {
-char *ptr = str;
-char *upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char *lower = "abcdefghijklmnopqrstuvwxyz";
-char *rot13_upper = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-char *rot13_lower = "nopqrstuvwxyzabcdefghijklm";
+	if (input == NULL)
+	{
+		return (NULL);
+	}
 
-while (*ptr != '\0')
+	char *output = input;
+	while (*input)
+	{
+		char c = *input;
+
+		if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		{
+			char base = (c >= 'a' && c <= 'z') ? 'a' : 'A';
+			*input = (c - base + 13) % 26 + base;
+		}
+
+		input++;
+	}
+
+	return (output);
+}
+/*
+ *main - initializes a sample test string
+ *
+ * description - calls rot13 function and tests if encoding is a success
+ *
+*/
+int main(void)
 {
-int i;
+	char text[] = "Hello, World!";
+	char *encoded = rot13(text);
 
-if ((*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= 'a' && *ptr <= 'z'))
-{
-char *charset = (*ptr >= 'A' && *ptr <= 'Z') ? upper : lower;
-char *rot13_charset = (*ptr >= 'A' && *ptr <= 'Z') ? rot13_upper : rot13_lower;
+	if (encoded != NULL)
+	{
+		printf("Original: Hello, World!\n");
+		printf("Encoded : %s\n", encoded);
+	}
+	else
+	{
+		printf("Input string is NULL.\n");
+	}
 
-for (i = 0; charset[i] != '\0'; i++)
-{
-if (*ptr == charset[i])
-{
-*ptr = rot13_charset[i];
-break;
-}
-}
-}
-
-ptr++;
+	free(encoded);
+	return (0);
 }
 
-return (str);
-}
