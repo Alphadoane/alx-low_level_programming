@@ -8,7 +8,7 @@
  */
 int _sqrt_recursion(int n)
 {
-    return (sqrt_recursive(n, 1)); // Start the recursive process.
+return (sqrt_recursive(n, 1));
 }
 
 /**
