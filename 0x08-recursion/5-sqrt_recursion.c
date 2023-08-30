@@ -32,7 +32,7 @@ return (sqrt_recursive(n, x + 1));
  *_sqrt_recursion - returns natural square root of a number.
  * @n: the number for which to find the square root.
  *
- *
+ *Description : this function calculates square root of n using recursion.
  * Return : the natural square root of n, or -1 if it doesn't have one.
  */
 int _sqrt_recursion(int n)
