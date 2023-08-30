@@ -21,5 +21,8 @@ int factorial(int n);
 
 /* Declaration of the _pow_recursion function */
 int _pow_recursion(int x, int y);
+
+/* Declaration of the _sqrt_recursion function */
+int _sqrt_recursion(int n);
 #endif /* MAIN_H */
 
