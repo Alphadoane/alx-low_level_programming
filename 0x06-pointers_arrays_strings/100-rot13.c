@@ -31,28 +31,4 @@ char *rot13(char *input)
 
 	return (output);
 }
-/*
- *main - initializes a sample test string
- *
- * description - calls rot13 function and tests if encoding is a success
- *
-*/
-int main(void)
-{
-	char text[] = "Hello, World!";
-	char *encoded = rot13(text);
-
-	if (encoded != NULL)
-	{
-		printf("Original: Hello, World!\n");
-		printf("Encoded : %s\n", encoded);
-	}
-	else
-	{
-		printf("Input string is NULL.\n");
-	}
-
-	free(encoded);
-	return (0);
-}
 
