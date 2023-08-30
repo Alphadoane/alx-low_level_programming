@@ -3,6 +3,7 @@
 /**
  * sqrt_recursive - helper function for calculating square root recursively.
  * @n: The number for which to find the square root.
+ * @x: The current guess for the square root.
  *
  * Description: This function recursively calculates the square root of n.
  *
@@ -27,8 +28,8 @@ return (-1);
 return (sqrt_recursive(n, x + 1));
 }
 /*
- * _sqrt_recursion - returns natural square root of a number
- * @n: the number for which to find the square root
+ * _sqrt_recursion - returns natural square root of a number.
+ * @n: the number for which to find the square root.
  *
  * Description: This function calculates the square root of n using recursion.
  *
