@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * is_palindrome_recursive - Helper function to check if a string is a palindrome.
+ * is_palindrome_recursive - Helper function to check palindrome.
  * @s: The string to check.
  * @start: The starting index.
  * @end: The ending index.
