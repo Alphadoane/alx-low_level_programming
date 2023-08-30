@@ -12,5 +12,8 @@ int _putchar(char c);
 
 /* Declaration of the _print_rev_recursion function */
 void _print_rev_recursion(char *s);
+
+/* Declaration of the _strlen_recursion function */
+int _strlen_recursion(char *s);
 #endif /* MAIN_H */
 
