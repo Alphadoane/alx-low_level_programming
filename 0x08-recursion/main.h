@@ -30,5 +30,8 @@ int is_prime_number(int n);
 
 /* Declaration of the is_palindrome function */
 int is_palindrome(char *s);
+
+/* Declaration of the wildcmp function */
+int wildcmp(char *s1, char *s2);
 #endif /* MAIN_H */
 
