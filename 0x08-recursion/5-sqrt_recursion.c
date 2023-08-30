@@ -29,7 +29,7 @@ return (sqrt_recursive(n, x + 1));
 }
 
 /*
- * _sqrt_recursion - returns natural square root of a number.
+ * -sqrt_recursion - returns natural square root of a number.
  * @n: the number for which to find the square root.
  *
  * Description : The function calculates the square root using recursion.
