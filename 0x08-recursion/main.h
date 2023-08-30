@@ -19,5 +19,7 @@ int _strlen_recursion(char *s);
 /* Declaration of the factorial function */
 int factorial(int n);
 
+/* Declaration of the _pow_recursion function */
+int _pow_recursion(int x, int y);
 #endif /* MAIN_H */
 
