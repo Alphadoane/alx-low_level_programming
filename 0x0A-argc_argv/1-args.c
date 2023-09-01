@@ -13,6 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
+int num_arguments = argc -1;
 /* Print the value of argc (number of command-line arguments) */
 printf("%d\n", argc - 1);
 
