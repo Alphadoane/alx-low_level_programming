@@ -9,15 +9,13 @@
  *         or NULL on failure.
  */
 char *argstostr(int ac, char **av)
-{
-if (ac == 0 || av == NULL)
-return (NULL);
-
-int i;
-int j;
+int i, j;
 int total_length = 0;
 char *result;
 int index = 0;
+{
+if (ac == 0 || av == NULL)
+return (NULL);
 
 for (i = 0; i < ac; i++)
 {
