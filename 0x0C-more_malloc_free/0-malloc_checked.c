@@ -16,6 +16,6 @@ if (ptr == NULL)
 exit(98); /* Terminate the program with status 98 */
 }
 
-return (ptr);
+return ptr;
 }
 
