@@ -7,11 +7,7 @@
  * This structure stores details about a dog,
  * including its name, age, and owner's name.
  */
-struct dog
-/*
- * we start here
- * the structure stores details about a dog
- */
+struct dog /* we start here */
 {
 char *name; /* the name of the dog */
 float age; /* the age of the dog in years */
