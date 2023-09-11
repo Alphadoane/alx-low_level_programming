@@ -27,6 +27,13 @@ char *owner; /* the name of the dog's owner */
  * @param owner The name of the dog's owner.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+typedef struct dog
+{
+char *name;
+float age;
+char *owner;
+}
+dog_t;
 
 #endif /* DOG_H */
 
