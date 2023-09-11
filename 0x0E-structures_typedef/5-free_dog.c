@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "dog.h"
+#include "main.h"
 
 /**
  * @brief Frees memory allocated for a dog structure.
