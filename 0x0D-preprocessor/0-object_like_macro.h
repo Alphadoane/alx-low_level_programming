@@ -1,11 +1,7 @@
-#include "my_header.h"
-#include <stdio.h>
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
 
-int main(void)
-{
-int s;
+#define SIZE 1024
 
-s = 98 + SIZE;
-printf("%d\n", s);
-return (0);
-}
+#endif /* MY_HEADER_H */
+
