@@ -33,7 +33,7 @@ putchar('\n');
 int main(void)
 {
 char *myName = "John";
-printf("Original name: %s\n", myName);
-print_name(myName, print_uppercase);
+putchar("Original name: %s\n", myName);
+putchar_name(myName, print_uppercase);
 return (0);
 }
