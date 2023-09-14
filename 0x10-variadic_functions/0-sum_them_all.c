@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdarg.h>
 /*
  * This function calculates the sum of all its integer parameters.
