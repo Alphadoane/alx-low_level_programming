@@ -6,7 +6,7 @@
  * @ac: The number of arguments.
  * @av: The arguments.
  *
- * Return: A pointer to the new string, or NULL if it fails or ac is 0 or av is NULL.
+ * Return: A pointer to new string, or NULL if it fails.
  */
 char *argstostr(int ac, char **av)
 {
@@ -15,7 +15,7 @@ int total_len = 0;
 int i, j, k;
 
 if (ac == 0 || av == NULL)
-return NULL;
+return (NULL);
 
 /* Calculate total length required for the new string */
 for (i = 0; i < ac; i++)
@@ -26,9 +26,10 @@ total_len++; /* For newline character */
 }
 
 /* Allocate memory for the new string */
-result = (char *)malloc((total_len + 1) * sizeof(char)); /* +1 for the null terminator */
+result = (char *)malloc((total_len + 1) * sizeof(char));
+/* +1 for the null terminator */
 if (result == NULL)
-return NULL;
+return (NULL);
 
 /* Copy arguments into the new string */
 k = 0;
@@ -42,5 +43,5 @@ result[k++] = '\n';
 }
 result[k] = '\0'; /* Null-terminate the string */
 
-return result;
+return (result);
 }
