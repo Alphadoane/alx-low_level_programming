@@ -1,47 +1,47 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * argstostr - Concatenates all the arguments of the program.
- * @ac: The argument count.
- * @av: The argument vector (array of strings).
+ * argstostr - Concatenates all arguments into a single string.
+ * @ac: The number of arguments.
+ * @av: The arguments.
  *
- * Return: A pointer to the newly allocated concatenated string,
- *         or NULL on failure.
+ * Return: A pointer to the new string, or NULL if it fails or ac is 0 or av is NULL.
  */
 char *argstostr(int ac, char **av)
-int i, j;
-int total_length = 0;
-char *result;
-int index = 0;
 {
-if (ac == 0 || av == NULL)
-return (NULL);
+    char *result;
+    int total_len = 0;
+    int i, j, k;
 
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-{
-total_length++;
-}
-total_length++;
-}
+    if (ac == 0 || av == NULL)
+        return NULL;
 
-result = malloc((total_length + 1) * sizeof(char));
+    // Calculate total length required for the new string
+    for (i = 0; i < ac; i++)
+    {
+        for (j = 0; av[i][j] != '\0'; j++)
+            total_len++;
+        total_len++; // For newline character
+    }
 
-if (result == NULL)
-return (NULL);
+    // Allocate memory for the new string
+    result = (char *)malloc((total_len + 1) * sizeof(char)); // +1 for the null terminator
+    if (result == NULL)
+        return NULL;
 
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-{
-result[index++] = av[i][j];
-}
-result[index++] = '\n';
-}
+    // Copy arguments into the new string
+    k = 0;
+    for (i = 0; i < ac; i++)
+    {
+        for (j = 0; av[i][j] != '\0'; j++)
+        {
+            result[k++] = av[i][j];
+        }
+        result[k++] = '\n';
+    }
+    result[k] = '\0'; // Null-terminate the string
 
-result[index] = '\0';
-
-return (result);
+    return result;
 }
 
