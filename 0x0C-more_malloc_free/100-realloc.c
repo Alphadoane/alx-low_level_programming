@@ -18,40 +18,40 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 void *new_ptr;
 unsigned int copy_size;
 
-// Handle the case where new_size is 0
+/* Handle the case where new_size is 0 */
 if (new_size == 0)
 {
 if (ptr != NULL)
 {
 free(ptr);
 }
-return NULL;
+return (NULL);
 }
 
-// Handle the case where ptr is NULL
+/* Handle the case where ptr is NULL */
 if (ptr == NULL)
 {
-return malloc(new_size);
+return (malloc(new_size));
 }
 
-// Handle the case where new_size == old_size
+/* Handle the case where new_size == old_size */
 if (new_size == old_size)
 {
-return ptr;
+return (ptr);
 }
 
-// Allocate new memory block
+/* Allocate new memory block */
 new_ptr = malloc(new_size);
 if (new_ptr == NULL)
 return (NULL);
 
-// Determine the size to copy
+/* Determine the size to copy */
 copy_size = (old_size < new_size) ? old_size : new_size;
 
-// Copy data from the old block to the new block
+/* Copy data from the old block to the new block */
 memcpy(new_ptr, ptr, copy_size);
 
 free(ptr);
 
 return (new_ptr);
-} 
+}
