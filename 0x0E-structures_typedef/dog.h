@@ -9,9 +9,9 @@
  */
 struct dog
 {
-char *name;   /* Pointer to the dog's name */
-float age;    /* Age of the dog */
-char *owner;  /* Pointer to the dog's owner */
+char *name;
+float age;
+char *owner;
 };
 
 #endif /* DOG_H */ 
